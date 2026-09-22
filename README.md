@@ -143,7 +143,7 @@ https://api.openai.com/v1/chat/completions
 
 ### 安全提醒
 
-API Key 会保存在浏览器本地，并发送到你填写的 API 地址：
+API Key 会保存在浏览器本地，并发送到脚本配置的 API 地址：
 
 - 不要把 API Key 提交到 GitHub
 - 不要把 API Key 写进 README
@@ -299,11 +299,11 @@ git init
 git add README.md
 git commit -m "docs: add UOOC Tampermonkey tutorial"
 git branch -M main
-git remote add origin https://github.com/<username>/<repo>.git
+git remote add origin https://github.com/Sering-Hong/uooc-tampermonkey-tutorial.git
 git push -u origin main
 ```
 
-请将 `<username>` 和 `<repo>` 替换为你的 GitHub 用户名和仓库名。
+实际使用时，应将远程地址替换为目标 GitHub 仓库地址。
 
 ## 九、开源与免责声明
 

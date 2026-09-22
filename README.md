@@ -4,6 +4,13 @@
 >
 > 请遵守所在学校和课程的规则，自动填写答案后必须人工检查，不要盲目提交。
 
+## 使用建议
+
+- 日常学习建议优先使用倍速、静音、连播和快捷键等视频辅助功能。
+- AI 答题不是必需功能，仅在课程明确允许且确有需要时启用。
+
+> 自动填写答案或后续自动提交可能触发课程诚信审查，并可能导致成绩无效、课程处分或账号异常等后果。
+
 ## 相关网站
 
 | 用途 | 链接 |
@@ -116,7 +123,9 @@ https://www.uooc.net.cn/home/learn/index#/1785941269/715389488/1639176130/205074
 - LLM答题
 - 开始答题
 
-## 五、配置 AI 答题
+## 五、可选：配置 AI 答题
+
+AI 答题是可选功能，不是安装脚本后必须启用的功能。自动填写答案可能带来课程诚信、成绩、课程处分或账号处理风险；同时会将题目发送到第三方 API，并产生相应费用。仅在课程规则明确允许时使用。
 
 1. 点击控制面板中的 `⚙️`。
 2. 填写 `API Base URL`。
@@ -154,6 +163,8 @@ API Key 会保存在浏览器本地，并发送到脚本配置的 API 地址：
 
 ### 视频控制
 
+视频控制是本脚本更常规的使用方式。建议优先启用倍速、静音、连播和快捷键，不需要时可以不配置 AI。
+
 脚本提供以下快捷键：
 
 | 按键 | 功能 |
@@ -166,7 +177,9 @@ API Key 会保存在浏览器本地，并发送到脚本配置的 API 地址：
 
 “连播”开启后，当前视频结束后会尝试寻找下一个视频。
 
-### LLM 答题
+### LLM 答题（可选）
+
+该功能不是必须启用项。是否使用应以课程规则为准，并提前考虑答题错误、隐私泄露、API 费用以及可能的课程或账号后果。
 
 1. 进入 UOOC 测评页面。
 2. 确认“LLM答题”已勾选。
@@ -251,70 +264,8 @@ UOOC助手
 - 服务商是否允许浏览器跨域请求
 - 账户是否有额度
 
-## 八、GitHub 开源仓库建议结构
-
-如果要把本教程发布为 GitHub 开源仓库，建议使用以下结构：
-
-```text
-uooc-tampermonkey-tutorial/
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── installation.md
-│   ├── configuration.md
-│   └── troubleshooting.md
-└── scripts/
-    └── uooc-assistant.user.js
-```
-
-`README.md` 可以直接使用本教程内容。
-
-### 推荐仓库标题
-
-```text
-UOOC Tampermonkey Assistant Tutorial
-```
-
-### 推荐仓库简介
-
-```text
-UOOC 优课联盟 + Tampermonkey 用户脚本安装、配置与故障排查教程。
-```
-
-### 推荐标签
-
-```text
-uooc
-tampermonkey
-userscript
-greasyfork
-openai
-chrome-extension
-```
-
-### 发布到 GitHub
-
-```bash
-git init
-git add README.md
-git commit -m "docs: add UOOC Tampermonkey tutorial"
-git branch -M main
-git remote add origin https://github.com/Sering-Hong/uooc-tampermonkey-tutorial.git
-git push -u origin main
-```
-
-实际使用时，应将远程地址替换为目标 GitHub 仓库地址。
-
-## 九、开源与免责声明
+## 八、免责声明
 
 `UOOC assistant` 脚本元数据标注为 MIT License，作者为 `cc & wybbb1`，当前版本为 `1.0.8`。
-
-发布教程或二次开发脚本时：
-
-- 保留原作者信息
-- 保留原始 License
-- 不要上传 API Key、Cookie、课程数据或个人隐私
-- 对修改内容明确标注
-- 遵守 Greasy Fork、UOOC 和所在学校的服务条款
 
 本教程仅用于技术学习和自动化操作说明，不保证 AI 答案正确，也不承担因自动提交、账号异常或课程违规造成的责任。
